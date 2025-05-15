@@ -25,7 +25,7 @@ if ($user && password_verify($password, $user['password'])) {
     // Redirect based on role
     switch ($user['role']) {
         case 'admin':
-            header("Location: dashboardadmin.php");
+            header("Location: admin/dashboardadmin.php");
             break;
         case 'employer':
             header("Location: dashboardhire.php");
